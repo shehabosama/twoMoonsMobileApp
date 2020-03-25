@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Ui.Activities.Exports.ExportsActivity"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="بيع منتج"
+            android:textStyle="bold"
+            android:id="@+id/sell_product" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="تسديد دائنون"
+            android:textStyle="bold"
+            android:id="@+id/pay_creditors" />
+
+
+    </LinearLayout>
+</layout>

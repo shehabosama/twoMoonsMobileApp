@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.two_moons_project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Ui.Activities.ProductReports.ProductReportsActivity"></activity>
+        <activity android:name=".Ui.Activities.ReceiveFromDebtor.ReceiveFromDebtor" />
+        <activity android:name=".Ui.Activities.AddCreditor.AddCreditorActivity" />
+        <activity android:name=".Ui.Activities.AddDebtor.AddDebtorActivity" />
+        <activity android:name=".Ui.Activities.AddProducts.AddProductsActivity" />
+        <activity android:name=".Ui.Activities.DebtorReports.DebtorReportsActivity" />
+        <activity android:name=".Ui.Activities.SalesReports.SalesReportsActivity" />
+        <activity android:name=".Ui.Activities.CreditorReports.CreditorReportsActivity" />
+        <activity android:name=".Ui.Activities.Reports.ReportsActivity" />
+        <activity android:name=".Ui.Activities.SellProduct.SellProductActivity" />
+        <activity android:name=".Ui.Activities.PayCreditor.PayCreditorActivity" />
+        <activity android:name=".Ui.Activities.Exports.ExportsActivity" />
+        <activity android:name=".Ui.Activities.Imports.ImportActivity" />
+        <activity android:name=".RxActivity" />
+        <activity android:name=".Ui.Activities.main.MainActivity" />
+        <activity android:name=".Ui.Activities.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

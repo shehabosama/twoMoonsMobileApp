@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Ui.Activities.Reports.ReportsActivity"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/btn_product_reports"
+            android:text="جميع المنتجات"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/btn_sales_reports"
+            android:text="تقارير المبيعات"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/btn_creditor_reports"
+            android:text="تقارير الدائنون"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/btn_debtor_reports"
+            android:text="تقارير المدينون"
+            android:textStyle="bold" />
+    </LinearLayout>
+</layout>
