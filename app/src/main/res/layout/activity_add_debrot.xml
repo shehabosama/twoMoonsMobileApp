@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Ui.Activities.AddDebtor.AddDebtorActivity"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="اضافه مدين موجود"
+            android:textStyle="bold"
+            android:id="@+id/add_exits_debtor"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/len_exist_debtor"
+            android:visibility="gone">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="اسم المدين"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/spin_debtor_name"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="قيمه الأدانه"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/value_of_money_exist"
+                android:inputType="numberDecimal"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اضافه"
+                android:textStyle="bold"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/submit_exist_debtor"
+                android:layout_gravity="center_horizontal"
+
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="اضافه مدين جديد"
+            android:textStyle="bold"
+            android:id="@+id/add_new_debtor"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/len_new_debtor"
+            android:visibility="gone">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="اسم المدين"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/debtor_name"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="قيمه الأدانه"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/value_of_money"
+                android:inputType="numberDecimal"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اضافه"
+                android:textStyle="bold"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/submit_new_debtor"
+                android:layout_gravity="center_horizontal"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
