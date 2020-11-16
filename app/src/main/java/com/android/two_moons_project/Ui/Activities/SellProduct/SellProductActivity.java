@@ -101,6 +101,7 @@ public class SellProductActivity extends BaseActivity implements BaseActivity.on
     private void initiateScan() {
         IntentIntegrator integrator = new IntentIntegrator(SellProductActivity.this);
         integrator.setBeepEnabled(true)
+                .setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES)
                 .setPrompt("من فضلك يا حج اسامه وجهه الكميرا بتعتك للمنتج")
                 .initiateScan();
     }
